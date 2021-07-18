@@ -4,19 +4,8 @@ using namespace std;
 int isTriplet(int x, int y, int z){
     int a,b,c;
     a=max(x,max(y,z));
-    if(a==x){
-        b=y;
-        c=z;
-    }
-    else if(a==y){
-        b=x;
-        c=z;
-    }
-    else{
-        b=y;
-        c=x;
-    }
-    if((a*a) == ((b*b)+(c*c)))
+    b=(x*x)+(y*y)+(z*z)-(a*a);
+    if(b==(a*a))
     return 1;
     else
     return 0;
