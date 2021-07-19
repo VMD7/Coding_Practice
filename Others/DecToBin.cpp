@@ -1,20 +1,19 @@
-
+//Decimal to binary
 #include <iostream>
 using namespace std;
-
 int DecToBin(int n){
-    int r=0,sum=0,i=0,q=0;
+    int i=1, r=0,ans=0;
     while(n>0){
         r=n%2;
-        sum = (sum*10)+r;
         n=n/2;
+        ans = ans + (r*i);
+        i*=10;
     }
-    return sum;
+    return ans;
 }
 int main()
 {
     int n;
-    cout<<"Enter Number";
     cin>>n;
-    cout<<DecToBin(n);
+    cout<<DecToBin(n)<<endl;
 }
