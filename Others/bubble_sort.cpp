@@ -2,8 +2,8 @@
 #include<iostream>
 using namespace std;
 void bubble_sort(int a[], int n){
-    int counter = 1, i;
-    while(counter<n){
+    int j, i;
+    for(j=0;j<n-1;j++){
         for(i=0;i<n;i++){
             if(a[i]>a[i+1]){
                 int temp = a[i];
@@ -11,7 +11,7 @@ void bubble_sort(int a[], int n){
                 a[i+1]=temp;
             }
         }
-        counter++;
+    
     }
     for(i=0;i<n;i++){
         cout<<a[i]<<" ";
