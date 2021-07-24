@@ -1,4 +1,4 @@
-//Kadans Algorithm
+//Kadans Algorithm for highest sum of subarray
 #include<iostream>
 #include<climits>
 using namespace std;
