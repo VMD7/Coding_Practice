@@ -1,0 +1,1 @@
+{"name":"Local: matrix_mul","url":"e:\\Engineering\\Coding\\Coding_Practice\\Others\\matrix_mul.cpp","tests":[{"id":1627388966791,"input":"3 4 4 3\n2 4 1 2\n8 4 3 6\n1 7 9 5\n1 2 3 \n4 5 6\n7 8 9\n4 5 6","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"e:\\Engineering\\Coding\\Coding_Practice\\Others\\matrix_mul.cpp","group":"local","local":true}
