@@ -11,12 +11,14 @@ int main(){
     cin.getline(a,n);
     cin.ignore();
 
-    int i=0;
+    int i=0,st=0,maxst=0;
     int current_len=0, max_len=0;
     while(1){
         if(a[i]==' ' || a[i]=='\0'){
             max_len=max(max_len,current_len);
+            maxst=st;
             current_len=0;
+            st=i+1;
         }
         else{
         current_len++;}
@@ -25,5 +27,8 @@ int main(){
         }
         i++;
     }
-    cout<<max_len;
+    cout<<max_len<<endl;
+    for(i=0;i<max_len;i++){
+        cout<<a[i+maxst];
+    }
 }
