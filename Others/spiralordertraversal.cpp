@@ -33,13 +33,13 @@ int main(){
         col_e--;
 
         //for row end
-        for(col=col_e;col>=col_s;col++){
+        for(col=col_e;col>=col_s;col--){
             cout<<a[row_e][col]<<" ";
         }
         row_e--;
 
         //for col start
-        for(row=row_e;row>=row_s;row++){
+        for(row=row_e;row>=row_s;row--){
             cout<<a[row][col_s];
         }
         col_s++;
