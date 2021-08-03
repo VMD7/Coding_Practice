@@ -11,15 +11,20 @@ int main(){
            cin>>a[i][j];
        }
    } 
-   for(i=0;i<n;i++){
-       for(j=0;j<n;j++){
-           if(i==j){
-               sum+=a[i][j];
-           }
-           if(i==(n-j-1)){
-               sum1+=a[i][j];
-           }
-       }
+   i=0;
+   j=0;
+   while(i!=n and j!=n){
+       sum +=a[i][j];
+       i++;
+       j++;
+   }
+   i=0;
+   j=n-1;
+   while(i!=n and j>=0){
+       sum1+=a[i][j];
+       i++;
+       j--;
+
    }
    diff = abs(sum-sum1);
    cout<<diff;
